@@ -1,9 +1,9 @@
-import {test, expect} from "@playwright/test"; 
+import { test, expect } from "@playwright/test";
 
-test('webapp deve estar on line' , async ({page}) => {
+test('webapp deve estar on line', async ({ page }) => {
 
 
-   await page.goto('http://localhost:8080');
-   await expect(page).toHaveTitle('Gerencie suas tarefas com Mark L')
-   await page.waitForTimeout(3000)
+    await page.goto('http://localhost:8080');
+    await expect(page).toHaveTitle('Gerencie suas tarefas com Mark L')
+    await page.waitForTimeout(3000)
 })
